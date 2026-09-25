@@ -1,0 +1,70 @@
+EXERCISE 02 – PYTHON
+
+1. What is Python?
+
+Python is a high-level programming language. It is designed to be easy to read, write, and understand.
+Python is used in many areas such as:
+- Web development
+- Data analysis
+- Artificial Intelligence and Machine Learning
+- Automation
+- Scientific computing
+- Software development
+- Testing
+- Cybersecurity
+- Data engineering
+
+
+2. Why do we use Python?
+Python is popular because its syntax is simple and easy to learn.
+For example, to display a message in Python:
+print("Hello World")
+Python allows programmers to create programs with fewer lines of code compared with many other programming languages.
+It also has many libraries and frameworks that help developers build applications faster.
+
+
+3. Advantages of Python
+- Easy to learn and understand.
+- Simple and readable syntax.
+- Requires fewer lines of code.
+- Works on Windows, Linux, and macOS.
+- Free and open source.
+- Has a large community.
+- Has many useful libraries and frameworks.
+- Good for automation and scripting.
+- Widely used for Data Science, AI, and Machine Learning.
+- Can be used for both small and large projects.
+
+
+4. Disadvantages of Python
+- Python can be slower than compiled languages such as C or C++.
+- It can use more memory than some other programming languages.
+- It is not commonly used for mobile application development.
+- Runtime errors can occur because Python is dynamically typed.
+- It may not be suitable for applications that require very high performance.
+
+
+5. What is Pseudocode?
+Pseudocode is a simple way of describing the steps of a program without using the exact syntax of a programming language.
+It is written using normal language and programming-style instructions.
+Pseudocode helps programmers plan the logic of a program before writing the actual code.
+
+Example:
+START
+    DISPLAY "Hello World"
+END
+
+
+6. Pseudocode for Reading a File
+START
+    SET filename to "example.txt"
+    OPEN filename for reading
+    IF file opens successfully THEN
+        READ the contents of the file
+        DISPLAY the contents
+        CLOSE the file
+    ELSE
+        DISPLAY "Unable to open file"
+    END IF
+END
+
