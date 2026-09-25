@@ -1,0 +1,1 @@
+print("AI Python Training Verification")
