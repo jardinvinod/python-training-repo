@@ -1,0 +1,310 @@
+EXERCISE 01 – AI AND LLM
+
+1. What is AI?
+AI stands for Artificial Intelligence.
+Artificial Intelligence is the ability of a computer system to perform tasks that normally require human intelligence.
+Examples of AI tasks include:
+- Understanding language
+- Recognizing images
+- Making predictions
+- Solving problems
+- Recommending products or videos
+- Generating text, images, audio, or code
+AI is a broad field. Machine Learning, Deep Learning, and Large Language Models are all parts of AI.
+
+
+2. What is an LLM?
+LLM stands for Large Language Model.
+An LLM is an AI model trained on very large amounts of text.
+It learns patterns in language and can generate text based on the input given by a user.
+LLMs can be used for:
+- Answering questions
+- Writing text
+- Summarizing documents
+- Translation
+- Programming
+- Chatbots
+- Extracting information
+- Searching documents
+
+
+3. What is LLM model size?
+LLM model size usually refers to the number of parameters in the model.
+Examples:
+7B = approximately 7 billion parameters
+70B = approximately 70 billion parameters
+A larger model usually needs:
+- More memory
+- More storage
+- More computing power
+However, a larger model is not automatically better for every task.
+Training quality, architecture, data quality, and fine-tuning are also important.
+
+
+4. What is a token?
+A token is a small unit of text that an LLM reads and processes.
+A token can be:
+- A complete word
+- Part of a word
+- A punctuation mark
+- A number
+- A symbol
+For example:
+"Hello world"
+may be divided into tokens similar to:
+"Hello"
+" world"
+The exact tokenization depends on the tokenizer used by the model.
+
+
+5. How does tokenization work?
+Tokenization is the process of converting text into tokens.
+Example:
+Input:
+"I am learning Python"
+A tokenizer may divide it into pieces such as:
+"I"
+" am"
+" learning"
+" Python"
+The tokens are then converted into numerical IDs.
+The LLM processes these numbers instead of directly processing text.
+
+
+6. What are parameters in an LLM?
+Parameters are numerical values inside a neural network.
+During training, the model adjusts these values so that it becomes better at predicting the next token.
+Parameters contain the patterns learned by the model.
+Examples of model sizes:
+1 billion parameters = 1B
+7 billion parameters = 7B
+70 billion parameters = 70B
+
+7. How do parameters relate to model size?
+More parameters normally mean:
+- More memory is required
+- More storage is required
+- More computation is required
+- Training can become more expensive
+For example, a 70B parameter model normally requires much more memory than a 7B parameter model.
+The number of parameters is therefore one important way of describing the size of an LLM.
+
+8. What is model fine-tuning?
+Fine-tuning means taking an already trained model and training it further on a smaller, more specific dataset.
+For example:
+A general LLM could be fine-tuned using:
+- Medical documents
+- Company support conversations
+- Legal documents
+- Programming examples
+Fine-tuning can make the model behave better for a particular task or domain.
+
+
+9. What is prompt engineering?
+Prompt engineering means designing the instructions given to an LLM so that it produces a better answer.
+For example:
+Simple prompt:
+"Explain SQL"
+Better prompt:
+"Explain SQL to a beginner using simple language and give one example of SELECT and INSERT."
+The second prompt gives the model more information about the expected answer.
+
+
+10. Prompt engineering vs fine-tuning
+Prompt Engineering:
+- Changes the instructions
+- Does not modify the model itself
+- Faster to test
+- Usually cheaper
+- Good for many normal tasks
+
+Fine-Tuning:
+- Changes some of the model's learned behavior
+- Requires training data
+- Requires additional training
+- Can be more expensive
+- Useful when consistent specialized behavior is required
+
+In simple words:
+Prompt engineering changes what we ask.
+Fine-tuning changes how the model has been trained to respond.
+
+
+11. What are embeddings?
+Embeddings are numerical representations of information.
+Text such as words, sentences, or documents can be converted into vectors containing numbers.
+Texts with similar meanings usually have embeddings that are closer to each other.
+Example:
+"doctor"
+and
+"physician"
+would normally have similar embeddings because their meanings are related.
+
+
+12. Why are embeddings important?
+Embeddings are useful for:
+- Semantic search
+- Document search
+- Recommendation systems
+- Finding similar text
+- RAG systems
+- Clustering information
+Unlike simple keyword search, embeddings can search based on meaning.
+
+
+13. What is the context window of an LLM?
+The context window is the maximum amount of information that an LLM can consider at one time.
+It includes things such as:
+- User messages
+- Previous conversation
+- Documents
+- Code
+- System instructions
+- Model responses
+The size is normally measured in tokens.
+
+
+14. Why does context window matter?
+A larger context window allows the LLM to process more information at the same time.
+This is useful for coding because a model may need to understand:
+- Multiple source files
+- Functions
+- Classes
+- Error messages
+- Documentation
+- Previous code changes
+If important information falls outside the available context, the model may not be able to use it when generating the answer.
+
+
+15. What are LLM hallucinations?
+An LLM hallucination happens when a model generates information that sounds believable but is incorrect or unsupported.
+Examples include:
+- Inventing facts
+- Giving a fake reference
+- Creating a function that does not exist
+- Giving incorrect dates
+- Inventing API parameters
+LLMs generate responses by predicting likely tokens. They do not automatically know whether every generated statement is true.
+
+
+16. What are the limitations of LLMs?
+Some important limitations are:
+- They can hallucinate
+- They can make reasoning mistakes
+- They can misunderstand unclear prompts
+- Their knowledge may be outdated
+- They may not know private or local information
+- They can produce incorrect code
+- They depend heavily on the quality of their input
+- Large models can require significant computing resources
+- Their output should be checked for important tasks
+
+
+17. How can an LLM interact with computers?
+An LLM can interact with computers by using tools.
+Examples include:
+- Calling APIs
+- Searching databases
+- Reading files
+- Writing files
+- Running Python code
+- Executing commands
+- Searching the web
+- Calling external applications
+The LLM normally decides which tool is needed and sends structured information to that tool.
+The tool performs the action and returns the result to the model.
+
+
+18. What is RAG?
+RAG stands for Retrieval-Augmented Generation.
+RAG allows an LLM to retrieve relevant information from an external source before answering a question.
+The process is approximately:
+User Question
+
+      ↓
+
+Search documents or database
+
+      ↓
+
+Retrieve relevant information
+
+      ↓
+
+Give retrieved information to LLM
+
+      ↓
+
+Generate answer
+
+
+Example:
+A company may have 10,000 internal documents.
+Instead of training the LLM again, a RAG system can search those documents and send only the relevant information to the LLM.
+This can improve accuracy and allow the system to use current or private information.
+
+
+19. Why is RAG useful?
+RAG can:
+- Give the LLM access to private documents
+- Use newer information
+- Reduce some hallucinations
+- Search large knowledge bases
+- Avoid retraining the complete model
+- Provide information relevant to a specific question
+
+
+20. Three useful frameworks to start coding with LLMs
+There is no single framework that is best for every project, but three widely used options for learning and building LLM applications are:
+1. LangChain
+LangChain is a framework for building applications that use language models.
+It can help with:
+- Model connections
+- Prompts
+- Tools
+- Agents
+- Workflows
+- Retrieval
+- RAG applications
+
+
+2. LlamaIndex
+LlamaIndex is useful for connecting LLMs with external data.
+It is particularly useful for:
+- Document loading
+- Indexing
+- Embeddings
+- Search
+- Retrieval
+- RAG systems
+
+
+3. Haystack
+Haystack is an open-source framework for building production-ready LLM applications.
+It supports:
+- RAG
+- AI agents
+- Pipelines
+- Tools
+- Document stores
+- Multiple LLM providers
+Haystack can connect to different model providers and can also work with local models.
+
+
+21. Simple comparison
+LangChain:
+Good for general LLM applications, workflows, tools, and agents.
+LlamaIndex:
+Good for working with documents, data retrieval, indexing, and RAG.
+Haystack:
+Good for modular pipelines, RAG, agents, and production-oriented AI applications.
+
+
+22. Summary
+Artificial Intelligence is the broad field of making computers perform intelligent tasks.
+An LLM is a type of AI model trained to understand and generate language.
+LLMs process tokens, learn through parameters, and operate within a limited context window.
+Prompt engineering improves how we communicate with a model, while fine-tuning changes the model's learned behavior.
+Embeddings represent meaning as numerical vectors and are important for search and RAG.
+RAG allows an LLM to retrieve external information before generating an answer.
+LLMs are powerful, but they can make mistakes and hallucinate, so important outputs should always be verified.
