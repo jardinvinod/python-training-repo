@@ -3,9 +3,7 @@ EXERCISE 01 – SQL LIFE
 1. What is SQL?
 
 SQL stands for Structured Query Language.
-
 SQL is a programming language used to communicate with databases. It is mainly used to store, retrieve, update, delete, and manage data.
-
 SQL is commonly used with relational databases such as:
 
 - MySQL
@@ -18,9 +16,7 @@ SQL is commonly used with relational databases such as:
 2. Why do we use SQL?
 
 SQL is used because databases can contain large amounts of information, and SQL makes it easier to work with that information.
-
 Using SQL, we can:
-
 - Create databases and tables
 - Add new data
 - Read stored data
@@ -35,22 +31,17 @@ Using SQL, we can:
 3. Who created SQL?
 
 SQL was developed in the 1970s at IBM.
-
 The main developers were Donald D. Chamberlin and Raymond F. Boyce.
-
 The original language was called SEQUEL, which stood for Structured English Query Language.
-
 It was later renamed SQL.
 
 
 4. Simple SQL Example
 
 Suppose we have a table called Students.
-
 To display all students:
 
 SELECT * FROM Students;
-
 To find a student named John:
 
 SELECT * FROM Students
@@ -60,7 +51,6 @@ To add a student:
 
 INSERT INTO Students (name, age)
 VALUES ('John', 20);
-
 
 5. Advantages of SQL
 
@@ -76,9 +66,6 @@ VALUES ('John', 20);
 6. Summary
 
 SQL is a language used to communicate with relational databases.
-
 It allows users and applications to create, read, update, and delete data.
-
 SQL was developed at IBM in the 1970s by Donald D. Chamberlin and Raymond F. Boyce.
-
 Today, SQL is one of the most widely used technologies for working with databases.
